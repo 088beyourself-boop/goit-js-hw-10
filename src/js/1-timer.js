@@ -16,6 +16,10 @@ const secondsEl = document.querySelector('[data-seconds]');
 let userSelectedDate = null;
 let timerInterval = null;
 
+// Блокуемо кнопку у коді при першому завантаженні сторінки
+
+startBtn.disabled = true;
+
 const options = {
   enableTime: true,
   time_24hr: true,
